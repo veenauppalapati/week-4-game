@@ -39,6 +39,9 @@
 	height: 100px;
 	float:left;	
 	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
 }
 
 #winsandlossesbox
