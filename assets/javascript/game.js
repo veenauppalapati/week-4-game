@@ -4,11 +4,13 @@ function getRndInteger(min, max)
 		}
 		// console.log(getRndInteger(19,120));
 		
-
-$(document).ready(function()
+var losses = 1;
+var wins = 1;
+var counter = 0;
+var setToZero = 0;
+$(document).ready(function reset()
 	{
-		var losses = 0;
-		var wins = 0;
+		
 		var store = getRndInteger(19,120);
     	$("#randomnumberbox").text(store);
     	
@@ -16,7 +18,7 @@ $(document).ready(function()
 
     	
   		// Here we created a counter, we'll be using this to track the user's total.
-  		var counter = 0;
+  		
 
   		// Here we created an on-click event that responds to button clicks of the crystal image.
   		$(".crystal-image").on("click", function() {
@@ -35,15 +37,21 @@ $(document).ready(function()
 
      	 // If the numbers match we'll celebrate the user's win.
       		alert("You win!");
-      		$("#wins").text(wins++);
-
+      		$("#wins").text("Wins: " +wins++);
+          $("#totalscore").text("reset to: " + setToZero);
+          counter=set;
+          reset();
    		 }
 
    		 else if (counter> store)
     	{
     		// If the number is more than the genered number, we'll let the user know the loss
     		alert("you lose!");
-    		$("#losses").text(losses++);
+    		$("#losses").text("losses: " + losses++);
+        $("#totalscore").text("reset to: " + setToZero);
+        counter=setToZero;
+        reset();
+
     		
     	}
 
