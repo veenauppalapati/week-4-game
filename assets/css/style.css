@@ -1,0 +1,87 @@
+#background
+{ /* opening tag for background attributes */
+	background-image: url(http://cdn.pcwallart.com/images/crystal-wallpaper-4.jpg);
+	
+}/* closing tag for background attributes */
+
+#header
+{
+	background: red;
+	width: 33.33%;
+	
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100px;
+}
+
+#instructionsbox
+{
+	background: white;
+	width: 50%;
+	
+	color:red;
+	font-size: 20px;
+}
+
+#section
+{
+	width: 50%;
+	height: 100px;
+	background: yellow;
+	position: relative;
+}
+
+#randomnumberbox
+{
+	background: black;
+	width: 50%;
+	height: 100px;
+	float:left;	
+	color: white;
+}
+
+#winsandlossesbox
+{
+	background: white;
+	width: 50%;
+	height: 100px;
+	float: left;
+	padding-left: 10px;
+	box-sizing: border-box;
+	
+}
+
+#crystalsection
+{
+	background: black;
+	width:50%;
+	margin-top: 20px;
+	box-sizing: border-box; 
+}
+.crystal-image
+{
+	width: 20%;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 3%;
+		
+}
+
+#totalscoreheader
+{
+	width:33.33%;
+	background: red;
+	margin-top: 10px;
+}
+
+#totalscore
+{
+	width: 33.33%;
+	height:100px;
+	background: white;
+	margin-top:10px;
+}
+
+
