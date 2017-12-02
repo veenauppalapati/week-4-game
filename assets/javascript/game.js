@@ -19,7 +19,43 @@ var counter = 0;
 var setToZero = 0;
 var store =0;
 
+var crystal1Img = '../images/crystal-image-1.jpg';
+var crystal2Img = '../images/crystal-image-2.jpg';
+var crystal3Img = '../images/crystal-image-3.jpg';
+var crystal4Img = '../images/crystal-image-4.jpg';
+// var num =10;
+
+var imgArray = [crystal1Img, crystal2Img, crystal3Img, crystal4Img];
+console.log(imgArray[0]);
+console.log(imgArray[1]);
+console.log(imgArray[2]);
+console.log(imgArray[3]);
+console.log(typeof (imgArray[0]));
+console.log(typeof (imgArray[1]));
+console.log(typeof (imgArray[2]));
+console.log(typeof (imgArray[3]));
+// var randomWord = "";
+
+// We begin by expanding our array to include four options.
+// var array = [10, 5, 3, 7];
+
+
+
 //===========================================================================================
+
+// function randomWordInArray()
+//   {
+//     randomWord = array[Math.floor(Math.random() * array.length)];
+//     for(var i = 0; i < array.length; i++)
+//       {
+//         var x = randomWord(i);
+//         var y = randomWord(i);
+//       }   
+//       x!= y 
+    
+//   }
+//   randomWordInArray();
+   
 
 function reset()
   {
@@ -53,15 +89,24 @@ $(document).ready(function ()
 
     {
 
-      // Here we establish the "targetNumber" (set to getrndInteger between 1-12).
-      var targetNumber = getRndInteger(1,12);
-      console.log(targetNumber);
+     // grab the value of the image which has the attibute of crystalValue
+     var val = $(this).attr("crystalValue"); 
+     console.log(val);
+     console.log(typeof (val));
+     // turn the string into a number so we can add points
+     val = parseInt(val);
+     console.log(typeof (val));
 
+     // var val = $(this).attr(crystalValue)
+     // val = getRndInteger(1, 12);
+      
+      //add number to score
+      $("")
        // Each time the user clicks the crystal the counter goes up by targetNumber which is getRndInteger between 1-12.
-      counter = counter + targetNumber;//(counter = counter + targetNumber)
+      counter = counter + val;//(counter = counter + targetNumber)
 
       // We then output the number of times the crystal is clicked.
-      $("#totalscore").text("Your score is increased by " + targetNumber + " so your new score is: " + counter);
+      $("#totalscore").text("Your score is increased by " + val + " so your new score is: " + counter);
 
       //-------------------------------------------------------------------------------------------------------
 
